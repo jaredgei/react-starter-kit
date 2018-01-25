@@ -1,0 +1,30 @@
+@import './variables';
+
+header {
+  width: 100%;
+  padding: 0;
+  border-bottom: 1px solid $light_gray;
+  margin-bottom: 40px;
+
+  nav {
+
+    ul {
+      text-align: center;
+
+      li {
+        display: inline;
+        margin-right: 60px;
+
+        a {
+          color: #333;
+          text-decoration: none;
+
+          &:hover {
+            color: $blue;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

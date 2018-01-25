@@ -1,0 +1,11 @@
+@import './variables';
+
+.home {
+    h1 {
+        color: $blue;
+    }
+
+    img.image {
+        max-width: 200px;
+    }
+}
