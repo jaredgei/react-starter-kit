@@ -14,7 +14,7 @@
 /******/ 		var script = document.createElement("script");
 /******/ 		script.type = "text/javascript";
 /******/ 		script.charset = "utf-8";
-/******/ 		script.src = __webpack_require__.p + "" + chunkId + "." + hotCurrentHash + ".hot-update.js";
+/******/ 		script.src = __webpack_require__.p + "hot/hot-update.js";
 /******/ 		;
 /******/ 		head.appendChild(script);
 /******/ 	}
@@ -26,7 +26,7 @@
 /******/ 				return reject(new Error("No browser support"));
 /******/ 			try {
 /******/ 				var request = new XMLHttpRequest();
-/******/ 				var requestPath = __webpack_require__.p + "" + hotCurrentHash + ".hot-update.json";
+/******/ 				var requestPath = __webpack_require__.p + "hot/hot-update.json";
 /******/ 				request.open("GET", requestPath, true);
 /******/ 				request.timeout = requestTimeout;
 /******/ 				request.send(null);
@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "1fd3888170648472f21c"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "c67f1f55c22dde2f456e"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars

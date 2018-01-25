@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start-dev": "rimraf dist && webpack --colors && NODE_ENV=development node ./server.js",
+    "webpack": "rimraf dist && webpack --colors --watch",
+    "start-dev": "NODE_ENV=development node ./server.js",
     "build": "rimraf dist && NODE_ENV=production webpack --colors",
     "start": "NODE_ENV=production PORT=8080 pm2 start ./server.js",
     "lint": "eslint src webpack"

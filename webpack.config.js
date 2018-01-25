@@ -54,7 +54,9 @@ if (isProduction) {
 // ------------------------------------------
 webpackConfig.output = {
     path: Path.join(__dirname, './dist'),
-    filename: jsOutputPath
+    filename: jsOutputPath,
+    hotUpdateChunkFilename: 'hot-updates/hot-update.js',
+    hotUpdateMainFilename: 'hot-updates/hot-update.json'
 };
 
 // ------------------------------------------
