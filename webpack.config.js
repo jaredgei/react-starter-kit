@@ -70,7 +70,7 @@ webpackConfig.devtool = isProduction ? 'source-map' : 'cheap-eval-source-map';
 if (isProduction) {
     webpackConfig.module.loaders.push({
         test: /\.scss$/,
-        loader: ExtractSASS.extract(['css', 'sass'])
+        loader: ExtractSASS.extract(['css-loader', 'sass-loader'])
     });
 } else {
     webpackConfig.module.loaders.push({
@@ -84,7 +84,6 @@ if (isProduction) {
 // ------------------------------------------
 if (isProduction) {
     webpackConfig.plugins.push(
-        new Webpack.optimize.OccurenceOrderPlugin(),
         new Webpack.optimize.UglifyJsPlugin({
             compressor: {
                 warnings: false
