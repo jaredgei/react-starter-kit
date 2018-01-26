@@ -1,4 +1,4 @@
-# Starter for React Applications using Express,  Redux, and SCSS
+# Starter for React Applications using Express,  GraphQL, and SCSS
 
 ### Dev
 
